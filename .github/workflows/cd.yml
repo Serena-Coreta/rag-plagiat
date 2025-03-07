@@ -21,15 +21,10 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-
-
-
       - name: Build Docker image
         run: |
-          docker build -t yourdockerhubusername/rag-plagiarism .
+          docker build -t serena08/rag-plagiat .  
       
       - name: Push Docker image
         run: |
-          docker push yourdockerhubusername/rag-plagiarism
-
-          
+          docker push serena08/rag-plagiat  
